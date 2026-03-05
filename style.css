@@ -1,0 +1,25 @@
+/* style.css */
+body { font-family: 'PingFang SC', sans-serif; background: #f8fafc; color: #1a202c; }
+.fixed-header { position: fixed; top: 0; left: 0; width: 100%; background: linear-gradient(to right, #2b6cb0, #4c51bf); box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+.logo { height: 40px; }
+.marquee-container { margin-bottom: 1rem; overflow: hidden; background: linear-gradient(to right, #feb2b2, #fc8181); border-radius: 12px; padding: 1rem; border: 1px solid #e53e3e; }
+.marquee { white-space: nowrap; animation: marquee 15s linear infinite; padding-left: 100%; color: #3b0764; font-weight: 700; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+.section-block { background: #fff; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); padding: 1.25rem; margin-bottom: 1.25rem; border: 2px solid #cbd5e0; }
+.section-title { font-size: 1.25rem; font-weight: 800; color: #2a4365; margin-bottom: 1rem; border-bottom: 3px solid #2b6cb0; padding-bottom: 0.5rem; }
+.section-content { background: #edf2f7; border-radius: 10px; padding: 1rem; margin-top: 1rem; }
+.ad-grid, .post-list, .sub-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.ad-position { background: linear-gradient(to bottom right, #f6e05a, #ecc94b); border-radius: 12px; border-left: 8px solid #b7791f; padding: 1rem; color: #3c366b; }
+.post-title { background: linear-gradient(to bottom right, #68d391, #48bb78); border-radius: 12px; border-left: 8px solid #2f855a; padding: 1rem; color: #1c4532; }
+.footer { background: linear-gradient(to right, #2d3748, #1a202c); color: #edf2f7; text-align: center; padding: 1.5rem; margin-top: 1rem; border-top: 8px solid #4a5568; }
+#adminPanel { display: none; background: #fff; border-radius: 16px; padding: 1.75rem; margin-top: 1.25rem; border: 1px solid #cbd5e0; }
+.download-btn, .login-btn { padding: 0.5rem 1rem; border-radius: 8px; color: white; font-weight: 600; transition: 0.3s; }
+.download-btn { background: #3b82f6; }
+.login-btn { background: #10b981; }
+
+/* PC端大屏 */
+@media (min-width: 769px) {
+    .section-block { margin-bottom: 2rem; padding: 2rem; }
+    .marquee-container { margin-bottom: 2.5rem; }
+    .section-title { font-size: 1.75rem; }
+}

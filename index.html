@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸿运商城 - 专业设计首页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部悬浮框架 -->
+    <header class="fixed-header">
+        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo" class="logo">
+        <div class="flex space-x-4">
+            <button class="download-btn">下载APP</button>
+            <button onclick="showAdminPanel()" class="login-btn">登录</button>
+        </div>
+    </header>
+
+    <!-- 内容从顶部下移 -->
+    <div class="pt-20 container">
+
+        <!-- 公告栏 -->
+        <section class="marquee-container">
+            <div class="marquee">欢迎来到鸿运商城！最新公告：2026年活动即将开始... 更多惊喜等你来！</div>
+        </section>
+
+        <!-- 日历器 -->
+        <section class="section-block">
+            <h2 class="section-title">日历器</h2>
+            <div class="section-content text-center" id="calendarDisplay"></div>
+        </section>
+
+        <!-- 澳门六合彩开奖结果 -->
+        <section class="section-block">
+            <h2 class="section-title">澳门六合彩开奖结果</h2>
+            <div class="section-content text-center" id="lotteryResults">加载中...</div>
+        </section>
+
+        <!-- 资料区1 -->
+        <section class="section-block">
+            <h2 class="section-title">资料区</h2>
+            <div class="section-content">资料更新：最新资料1...</div>
+        </section>
+
+        <!-- 广告一区 -->
+        <section class="section-block">
+            <h2 class="section-title">广告一区</h2>
+            <div class="ad-grid">
+                <div class="ad-position">123期：广告词1</div>
+                <div class="ad-position">124期：广告词2</div>
+                <div class="ad-position">125期：广告词3</div>
+                <div class="ad-position">126期：广告词4</div>
+                <div class="ad-position">127期：广告词5</div>
+                <div class="ad-position">128期：广告词6</div>
+            </div>
+        </section>
+
+        <!-- 资料区2 -->
+        <section class="section-block">
+            <h2 class="section-title">资料区</h2>
+            <div class="section-content">资料更新：最新资料2...</div>
+        </section>
+
+        <!-- 广告二区 -->
+        <section class="section-block">
+            <h2 class="section-title">广告二区</h2>
+            <div class="ad-grid">
+                <div class="ad-position">129期：广告词7</div>
+                <div class="ad-position">130期：广告词8</div>
+                <div class="ad-position">131期：广告词9</div>
+                <div class="ad-position">132期：广告词10</div>
+                <div class="ad-position">133期：广告词11</div>
+                <div class="ad-position">134期：广告词12</div>
+            </div>
+        </section>
+
+        <!-- 资料区3 -->
+        <section class="section-block">
+            <h2 class="section-title">资料区</h2>
+            <div class="section-content">资料更新：最新资料3...</div>
+        </section>
+
+        <!-- 广告三区 -->
+        <section class="section-block">
+            <h2 class="section-title">广告三区</h2>
+            <div class="ad-grid">
+                <div class="ad-position">135期：广告词13</div>
+                <div class="ad-position">136期：广告词14</div>
+                <div class="ad-position">137期：广告词15</div>
+                <div class="ad-position">138期：广告词16</div>
+                <div class="ad-position">139期：广告词17</div>
+                <div class="ad-position">140期：广告词18</div>
+            </div>
+        </section>
+
+        <!-- 资料区4 -->
+        <section class="section-block">
+            <h2 class="section-title">资料区</h2>
+            <div class="section-content">资料更新：最新资料4...</div>
+        </section>
+
+        <!-- 图片广告位 -->
+        <section class="section-block">
+            <img src="https://via.placeholder.com/1920x200?text=图片广告位" alt="Image Ad" class="w-full h-auto rounded-lg">
+        </section>
+
+        <!-- 资料区5 -->
+        <section class="section-block">
+            <h2 class="section-title">资料区</h2>
+            <div class="section-content">资料更新：最新资料5...</div>
+        </section>
+
+        <!-- 高手榜一 -->
+        <section class="section-block">
+            <h2 class="section-title">高手榜一</h2>
+            <div class="post-list">
+                <div class="post-title">帖子标题1</div>
+                <div class="post-title">帖子标题2</div>
+            </div>
+        </section>
+
+        <!-- 资料区6 -->
+        <section class="section-block">
+            <h2 class="section-title">资料区</h2>
+            <div class="section-content">资料更新：最新资料6...</div>
+        </section>
+
+        <!-- 高手榜二 -->
+        <section class="section-block">
+            <h2 class="section-title">高手榜二</h2>
+            <div class="post-list">
+                <div class="post-title">帖子标题3</div>
+                <div class="post-title">帖子标题4</div>
+            </div>
+        </section>
+
+        <!-- 资料区7 -->
+        <section class="section-block">
+            <h2 class="section-title">资料区</h2>
+            <div class="section-content">资料更新：最新资料7...</div>
+        </section>
+
+        <!-- 生肖属性2026 -->
+        <section class="section-block">
+            <h2 class="section-title">2026年生肖属性</h2>
+            <div class="section-content text-center">2026年为丙午年，属马，五行属火，纳音天河水。生肖马值太岁兼刑太岁，运势多舛。犯太岁者尚有鼠冲、牛害、兔破，需谨守正南方太岁位与正北岁破方。在生肖文化中，马有继往开来、拓展疆土的寓意。</div>
+        </section>
+
+        <!-- 网站版权信息 -->
+        <footer class="footer">
+            <p>&copy; 2026 鸿运商城 All Rights Reserved.</p>
+        </footer>
+
+        <!-- 后台管理面板 -->
+        <div id="adminPanel" class="section-block">
+            <h2 class="section-title">后台管理</h2>
+            <div class="section-content">
+                <p>欢迎管理员！这里可以编辑公告、更新资料、添加广告等。</p>
+                <form class="space-y-4">
+                    <label>更新公告：</label>
+                    <input type="text" id="announceInput">
+                    <button onclick="saveAnnounce()">保存</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
